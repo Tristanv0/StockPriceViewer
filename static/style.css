@@ -10,7 +10,6 @@ h1 {
 .container {
     display: flex; /* Use flexbox to center align vertically and horizontally */
     justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
     height: 100vh; /* Set a height for the container (100vh = 100% of viewport height) */
   }
   
@@ -23,4 +22,35 @@ h1 {
     color: white;
     text-align: center;
     padding: 5px;
+}
+
+
+/* Style for the form */
+.search {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+/* Style for the input field */
+.search input[type="text"] {
+  border: none;
+  padding: 8px;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  width: 200px;
+}
+
+/* Style for the submit button */
+.search input[type="button"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  cursor: pointer;
 }
