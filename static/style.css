@@ -1,0 +1,26 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #333;
+}
+
+.container {
+    display: flex; /* Use flexbox to center align vertically and horizontally */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Set a height for the container (100vh = 100% of viewport height) */
+  }
+  
+  h1 {
+    text-align: center; /* Center-align the text horizontally within the <h1> element */
+  }
+  
+/* Style the footer */
+.footer {
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
