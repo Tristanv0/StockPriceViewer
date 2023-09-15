@@ -1,10 +1,14 @@
-from flask import Flask
+from flask import Flask, render_template
+import yfinance as yf
 
-app = Flask(__name__, static_url_path='', static_folder='static')
+app = Flask(__name__, template_folder='.')
+
+
+
 
 @app.route('/')
 def serve_index():
-    return app.send_static_file('index.html')
+    return render_template('index.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
