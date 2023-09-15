@@ -6,15 +6,15 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
+
+    <!-- Title of Web page BEGIN -->
     <div class="title">
         <h1>Stock Price Viewer</h1>
     </div>
-    
-    <form class="search">
-        Stock Symbol: <input type="text" id="symbolInput">
-        <input type="button" value="Submit" onclick="displayTradingView()">
-    </form>
-    <iframe id="tradingViewWidget" width="100%" height="500" frameborder="0"></iframe>
+    <!-- Title of Web page END -->
+
+    <!-- <iframe id="tradingViewWidget" width="100%" height="500" frameborder="0"></iframe> -->
+
     <!-- Widget BEGIN -->
     <div class="tradingview-widget-container">
         <div class="tradingview-widget-container__widget"></div>
@@ -51,7 +51,20 @@
         </script>
     </div>
     <!-- Widget END -->
+
+
+    <!-- Stock Search Bar BEGIN-->
     <br>
+    <form class="search">
+        <div>
+            <input type="text" id="symbolInput", placeholder="Search for stock symbols!">
+            <input type="button" value="Search" onclick="displayTradingView()">
+        </div>
+    </form>
+    <br>
+    <!-- Stock Search Bar END-->
+
+
     <!-- Widget BEGIN -->
     <div class="tradingview-widget-container">
         <div class="tradingview-widget-container__widget"></div>
@@ -126,12 +139,9 @@
     <br>
     <br>
 
-
-
     <footer class="footer">
         <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">All data sourced from TradingView</span></a></div>
     </footer>
-    
     <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
