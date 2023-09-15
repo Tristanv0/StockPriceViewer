@@ -1,10 +1,10 @@
-from flask import Flask, render_template
+from flask import Flask
 
-app = Flask(__name__, static_url_path='/static')
+app = Flask(__name__, static_url_path='', static_folder='static')
 
 @app.route('/')
-def hello():
-    return render_template('index.html')
+def serve_index():
+    return app.send_static_file('index.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
